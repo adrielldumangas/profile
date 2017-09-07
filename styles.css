@@ -11,6 +11,8 @@ body {
     font-size: 14px;
     background-color: #ECEFF1;
     color: #212121;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .container {
@@ -61,6 +63,7 @@ p, li, h3, h4 {
 #main-header {
     background: #0D47A1;
     color: #FAFAFA;
+    transition: all 0.5s ease-out;
 }
 
 #skills-section {
@@ -85,6 +88,9 @@ footer {
 
 section h1 {
     text-transform: uppercase;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* MAIN HEAADER */
@@ -134,10 +140,6 @@ section h1 {
     padding-bottom: 20px;
 }
 
-/*#edu-section article h3, h4, p {
-    padding-bottom: 3px;
-}
-*/
 /* FOOTER */
 
 #copyright {
@@ -149,7 +151,8 @@ section h1 {
 footer a {
     display: inline-block;
     color: #9e9e9e;
-    padding-bottom: 40px;
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
 footer p {
@@ -157,6 +160,34 @@ footer p {
 }
 
 /* QUERIES */
+
+@media screen and (min-width: 361px)
+{
+    section h1 {
+        width: 324px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #main-header {
+        background: url("./assets/header-img.jpg") no-repeat 70% top;
+    }
+
+    #mini-pic {
+        width: 0;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    #main-header h1 {
+        text-align: left;
+    }
+
+    #main-header p {
+        width: 60%;
+    }
+}
 
 @media screen and (min-width: 1024px)
 {
@@ -167,20 +198,14 @@ footer p {
 
 @media screen and (min-width: 1200px)
 {
-    #main-header {
-        background: url("./assets/header-img.jpg");
-    }
-
-    #mini-pic {
-        width: 0;
-        visibility: hidden;
-    }
-
-    #main-header h1 {
-        text-align: left;
-    }
-
     #main-header p {
         width: 50%;
     }
+}
+
+@media screen and (min-width: 1441px)
+{
+    body {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    }   
 }
