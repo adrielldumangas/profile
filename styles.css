@@ -45,7 +45,7 @@ p, li, h3, h4 {
 .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .card {
@@ -168,7 +168,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 764px)
 {
     #main-header {
         background: url("./assets/header-img.jpg") no-repeat 70% top;
@@ -192,7 +192,27 @@ footer p {
 @media screen and (min-width: 1024px)
 {
     .container {
+        width: 80%;
+    }
+
+    #wrapper {
+        display: flex;
+    } 
+
+    #edu-section {
+        width: 50%;
+    }
+    #edu-section .container {
         width: 75%;
+        margin-right: 5%;
+    }
+
+    #other-section {
+        width: 50%;
+    }
+    #other-section .container {
+        width: 75%;
+        margin-left: 5%;
     }
 }
 
