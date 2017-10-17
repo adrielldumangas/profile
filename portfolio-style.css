@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Ubuntu:300,400');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: #eeeeee;
+	background-color: #1a1a1a;
+	font-size: 14px;
+}
+
+li {list-style: none}
+
+a {
+	text-decoration: none;
+	color: #1a1a1a;
+}
+
+.btn {
+	border: 2px solid;
+	padding: 10px 20px;
+	font-size: 0.8em;
+	transition: box-shadow 0.2s;
+}
+
+.btn:hover {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+	border-color: #616161;
+	color: #616161;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.flex-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gold {color: #FFD600}
+
+.blue {color: #2196F3}
+
+section {
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+section h1 {
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+/******* HEADER *******/
+header {
+	height: 100vh;
+	background-color: #1a1a1a;
+	color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3.4em;
+	width: 85%;
+}
+
+header h1 span {
+	font-family: 'Great Vibes', cursive;
+	font-size: 2em;
+	letter-spacing: 5px;
+}
+
+header p {
+	width: 90%;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+#scroll {
+	font-size: .8em;
+	text-align: center;
+}
+
+/******* ABOUT ME SECTION *******/
+#about-me {
+	background-color: #151515;
+}
+
+#about-me .flex-wrapper {justify-content: center}
+
+#about-me h1 {color: #fafafa}
+
+#about-me #profile-card {
+	min-width: 250px;
+	height: 400px;
+	background-color: #fafafa;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #1a1a1a;
+	margin: 20px 0;
+}
+
+#profile-card img {
+	width: 150px;
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.content {width: 100%}
+
+.content li {padding: 6px 0}
+
+.content h2 {padding: 20px 0}
+
+.skill-container, .skills {
+	height: 5px;
+	border-radius: 5px;
+} 
+
+.skill-container {
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: 2px;
+}
+
+.skills {
+	text-align: right;
+	background-color: #2196F3;
+}
+
+.typing {width: 90%}
+
+.ts {width: 80%}
+
+.assembly {width: 80%}
+
+.html {width: 75%}
+
+.photoshop {width: 75%}
+
+.research {width: 80%}
+
+.spreadsheets {width: 75%}
+
+/******* WORK SECTION *******/
+#work .wrapper {
+	position: relative;
+	margin-left: 10%;
+}
+
+#work .wrapper:before {
+	content: "";
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	border-left: 2px dashed #fafafa;
+}
+
+#work h2 {
+	padding: 10px 0 10px 20px;
+	font-weight: 400;
+}
+
+.card {
+	padding: 20px 0 20px 40px;
+	width: 100%;
+	color: #1a1a1a;
+}
+
+.card h3, .card h2, .card p {
+	background-color: #fafafa;
+	padding-left: 20px;
+}
+
+.year {
+	position: relative;
+}
+
+.year:before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fafafa;
+	border-radius: 50%;
+	background-color: #FFD600;
+	left: -49px;
+	top: -5px;
+}
+
+.company, .year {
+	font-weight: 400;
+}
+
+.loc {
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-bottom: 20px;
+	color: #9E9E9E;
+}
+
+.year {
+	border-top-right-radius: 15px;
+	padding-top: 20px;
+}
+
+#work .position.last {
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-bottom: 20px;
+}
+
+/********************* MEDIA QUERIES *********************/
+@media screen and (min-width: 601px)
+{
+	.container, header p {width: 85%}
+
+	.content {margin-left: 2.5em}
+
+	header h1 {font-size: 4em}
+
+	header h1 span {font-size: 3em}
+
+	#about-me .flex-wrapper {
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	#work .wrapper {margin-left: 20%}
+
+	.card {width: 350px}
+}
+
+@media screen and (min-width: 992px)
+{
+	body {font-size: 16px}
+
+	.container, header p {width: 75%}
+
+	#work .wrapper {margin-left: 25%}
+
+	.card {width: 420px}
+}
+
+@media screen and (min-width: 1200px)
+{
+	#work .wrapper {margin-left: 30%}
+}
