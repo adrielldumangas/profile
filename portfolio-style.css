@@ -48,13 +48,15 @@ a {
 
 .blue {color: #2196F3}
 
+.bold {font-weight: 400}
+
 section {
 	padding-top: 40px;
 	padding-bottom: 80px;
 }
 
 section h1 {
-	padding: 40px 0;
+	padding: 40px 0 80px;
 	font-size: 2em;
 }
 
@@ -110,7 +112,7 @@ header p {
 	justify-content: space-around;
 	align-items: center;
 	color: #1a1a1a;
-	margin: 20px 0;
+	margin-bottom: 20px;
 }
 
 #profile-card img {
@@ -167,11 +169,11 @@ header p {
 	width: 1px;
 	height: 100%;
 	position: absolute;
-	border-left: 2px dashed #fafafa;
+	border-left: 2px dashed #FFD600;
 }
 
 #work h2 {
-	padding: 10px 0 10px 20px;
+	padding: 10px 10px 10px 20px;
 	font-weight: 400;
 }
 
@@ -190,16 +192,16 @@ header p {
 	position: relative;
 }
 
-.year:before {
+.year:before { /* gold dot */
 	content: "";
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	border: 2px solid #fafafa;
+	border: 3px solid #fafafa;
 	border-radius: 50%;
 	background-color: #FFD600;
 	left: -49px;
-	top: -5px;
+	top: 25px;
 }
 
 .company, .year {
@@ -222,6 +224,52 @@ header p {
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	padding-bottom: 20px;
+}
+
+/******* SKILLS SECTION *******/
+#skills {
+	background-color: #151515;
+	padding-bottom: 40px;
+}
+
+#skills article {
+	text-align: center;
+	width: 278px;
+	padding-bottom: 40px;
+}
+
+#skills .flex-wrapper {
+	justify-content: space-around;
+}
+
+#skills article h2 {
+	display: inline-block;
+	padding: 0 10px 5px;
+	background-color: #fafafa;
+	border-radius: 0 15px 0 15px;
+	margin-bottom: 10px;
+}
+
+/******* EDUCATION SECTION *******/
+#education .flex-wrapper {
+	justify-content: space-around;
+}
+
+#education article {
+	background-color: #fafafa;
+	color: #1a1a1a;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	width: 400px;
+}
+
+#education h2 {
+	padding-bottom: 10px;
+}
+
+#education p {
+	color: #9E9E9E; 
 }
 
 /********************* MEDIA QUERIES *********************/
