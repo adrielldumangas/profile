@@ -12,7 +12,8 @@ body {
 	color: #eeeeee;
 	background-color: #1a1a1a;
 	font-size: 14px;
-    max-width: 1500px;
+    max-width: 1598px;
+    margin: auto;
 }
 
 li {list-style: none}
