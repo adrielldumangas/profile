@@ -12,6 +12,7 @@ body {
 	color: #eeeeee;
 	background-color: #1a1a1a;
 	font-size: 14px;
+    max-width: 1500px;
 }
 
 li {list-style: none}
@@ -131,7 +132,7 @@ header p {
 .skill-container, .skills {
 	height: 5px;
 	border-radius: 5px;
-} 
+}
 
 .skill-container {
 	width: 100%;
@@ -269,7 +270,7 @@ header p {
 }
 
 #education p {
-	color: #9E9E9E; 
+	color: #9E9E9E;
 }
 
 /********************* MEDIA QUERIES *********************/
