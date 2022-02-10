@@ -88,7 +88,7 @@ header h1 span {
 header p {
 	width: 90%;
 	letter-spacing: 1px;
-	text-align: justify;
+	text-align: center;
 }
 
 #scroll {
@@ -146,7 +146,13 @@ header p {
 	background-color: #2196F3;
 }
 
-.typing {width: 90%}
+.typing {width: 95%}
+
+.spreadsheets {width: 90%}
+
+.photoshop {width: 90%}
+
+.scraping {width: 85%}
 
 .ts {width: 80%}
 
@@ -154,11 +160,6 @@ header p {
 
 .html {width: 75%}
 
-.photoshop {width: 75%}
-
-.research {width: 80%}
-
-.spreadsheets {width: 75%}
 
 /******* WORK SECTION *******/
 #work .wrapper {
